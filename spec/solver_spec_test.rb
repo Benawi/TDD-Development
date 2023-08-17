@@ -17,7 +17,7 @@ RSpec.describe Solver do
       expect { solver.factorial(-2) }.to raise_error(RuntimeError, 'Factorial is not defined for negative numbers')
     end
   end
-  
+
   describe '#fizzbuzz' do
     it 'returns an array' do
       allow(solver).to receive(:call).and_return([1, 2, 'Fizz'])
