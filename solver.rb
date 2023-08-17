@@ -1,19 +1,19 @@
 class Solver
-    def fizzbuzz(number)
-      result = []
-  
-      (1..number).each do |i|
-        if i % 3 == 0 && i % 5 == 0
-          result << "FizzBuzz"
-        elsif i % 3 == 0
-          result << "Fizz"
-        elsif i % 5 == 0
-          result << "Buzz"
-        else
-          result << i  
-        end
-      end
-  
-      result
+  def fizzbuzz(number)
+    result = []
+
+    (1..number).each do |i|
+      result << if (i % 3).zero? && (i % 5).zero?
+                  'FizzBuzz'
+                elsif (i % 3).zero?
+                  'Fizz'
+                elsif (i % 5).zero?
+                  'Buzz'
+                else
+                  i
+                end
     end
+
+    result
+  end
 end
