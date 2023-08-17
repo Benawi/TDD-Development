@@ -43,4 +43,10 @@ RSpec.describe Solver do
     allow(fizzbuzz).to receive(:call).and_return([1, 2, 'Fizz', 13])
     expect(fizzbuzz.call[3]).to eq(13)
   end
+
+  describe '#reverse' do
+    it 'returns the reverse of a string' do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
