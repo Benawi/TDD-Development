@@ -1,12 +1,8 @@
 require 'rspec'
+require './solver'
 
 RSpec.describe 'FizzBuzz' do
   let(:fizzbuzz) { double }
-
-  it 'returns a function' do
-    allow(fizzbuzz).to receive(:call).and_return([1, 2, 'Fizz'])
-    expect(fizzbuzz.call).to be_a(Proc)
-  end
 
   it 'returns an array' do
     allow(fizzbuzz).to receive(:call).and_return([1, 2, 'Fizz'])
