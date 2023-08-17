@@ -29,4 +29,8 @@ RSpec.describe "FizzBuzz" do
     expect(fizzbuzz).to receive(:call).and_return([1, 2, "Fizz", 4, "Buzz", "FizzBuzz"])
     expect(fizzbuzz.call[5]).to eq("FizzBuzz")
   end
+  it "returns the number when not divisible by 3 or 5" do
+    expect(fizzbuzz).to receive(:call).and_return([1, 2, "Fizz", 13])
+    expect(fizzbuzz.call[3]).to eq(13)
+  end
 end
