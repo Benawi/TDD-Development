@@ -24,4 +24,9 @@ RSpec.describe "FizzBuzz" do
     expect(fizzbuzz).to receive(:call).and_return([1, 97, 98, "Buzz"])
     expect(fizzbuzz.call[3]).to eq("Buzz")
   end
+
+  it "returns FizzBuzz when divisible by 3 and 5" do
+    expect(fizzbuzz).to receive(:call).and_return([1, 2, "Fizz", 4, "Buzz", "FizzBuzz"])
+    expect(fizzbuzz.call[5]).to eq("FizzBuzz")
+  end
 end
