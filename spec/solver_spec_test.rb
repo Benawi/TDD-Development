@@ -45,6 +45,9 @@ RSpec.describe Solver do
   end
 
   describe '#reverse' do
+    it 'returns a string' do
+      expect(solver.reverse('hello')).to be_a(String)
+    end
     it 'returns the reverse of a string' do
       expect(solver.reverse('hello')).to eq('olleh')
     end
