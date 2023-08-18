@@ -55,7 +55,7 @@ This repository includes test and mock files for Ruby. It demonstrates TDD with 
 - [x] Write unit tests using Rspec.
 - [x] Understand an existing codebase in a way that allows for adding tests.:
 - [x] Write Rspec unit tests with mocks.
-- [x] Understand the TDD concept.
+- [x] Understand the TDD concept
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
